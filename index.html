@@ -1,19 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Card com autoplay de imagem </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>Adesivos Brasília</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
-
 <body>
+    <!--<header>
+        <nav class="navbar navbar-expand-lg bg-body-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Adesivos Brasília</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+   </header>-->
 
-<!--Imagem do do lado direito e texto do lado esquerdo-->
+    <!-- carousel -->
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="img/img1.jpeg">
+                <div class="content">
+                    <div class="title">Adesivos Brasília</div>
+                    <div class="topic">Pelicula automotiva</div>
+                    <div class="des">
+                       <!--texto opcional-->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/img2.jpeg">
+                <div class="content">
+                    <div class="title">Adesivos Brasília</div>
+                    <div class="topic">Pelicula automotiva</div>
+                    <div class="des">
+                        <!--texto opcional-->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/img3.jpeg">
+                <div class="content">
+                    <div class="title">Adesivos Brasília</div>
+                    <div class="topic">Pelicula automotiva</div>
+                    <div class="des">
+                        <!--texto opcional-->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/img4.jpeg">
+                <div class="content">
+                    <div class="title">Adesivos Brasília</div>
+                    <div class="topic">Pelicula automotiva</div>
+                    <div class="des">
+                        <!--texto opcional-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="img/img1.jpeg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/img2.jpeg">
+                <div class="content">
+                    <div class="title">
+                        Adesivos Brasília
+                    </div>
+                    <div class="description">
+                        Adesivos Brasília
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/img3.jpeg">
+                <div class="content">
+                    <div class="title">
+                        Adesivos Brasília
+                    </div>
+                    <div class="description">
+                        Adesivos Brasília
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/img4.jpeg">
+                <div class="content">
+                    <div class="title">
+                        Adesivos Brasília
+                    </div>
+                    <div class="description">
+                        Adesivos Brasília
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+
+
+
+<!--Imagem do do lado direito e texto do lado esquerdo 01 -->
 <div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/imagem1.jpg" alt="Slide 1">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/imagem2.jpeg" alt="Slide 2">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/imagem3.jpeg" alt="Slide 3">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/imagem4.jpeg" alt="Slide 4">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/imagem5.jpeg" alt="Slide 5">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold text-body-whide lh-1 mb-3"> Aplicação de Pelicula Veicular </h1>
+      <p class="lead">Maximize a proteção e o estilo do seu veículo com nossos serviços de aplicação pelicular para vidros e lataria. Nossa película de alta qualidade oferece proteção contra riscos, manchas e danos causados pelo sol, mantendo seus vidros e pintura com uma aparência impecável por mais tempo. Conte com nossa equipe especializada para uma aplicação precisa e resultados excepcionais que excedem suas expectativas.</p><br>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Saiba mais</button>
+      </div>
+    </div>
+  </div>
+</div>   
+
+
+
+
+<!--Imagem do do lado esquerdo e texto do lado direito 02 -->
+<div class="container col-xxl-8 px-4 py-5">
+  <div class="row flex-lg-row align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
@@ -36,56 +203,126 @@
         </div>
       </div>
       <div class="col-lg-6">
-        <h1 class="display-5 fw-bold text-body-whide lh-1 mb-3"> Coloque seu titulo aqui </h1>
-        <p class="lead">Entre montanhas majestosas e campos verdejantes, a paisagem se revela em toda sua grandiosidade. Os raios do sol pintam um quadro de cores vibrantes sobre os vales tranquilos. O rio serpenteia suavemente, refletindo o céu azul profundo. Árvores antigas testemunham o passar das estações, suas folhas dançando ao sabor do vento. Cada detalhe dessa paisagem inspira calma e admiração, uma obra-prima da natureza.</p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Saiba mais</button>
+          <h1 class="display-5 fw-bold text-body-whide lh-1 mb-3">Aplicação de Papel de Parede Residencial</h1>
+          <p class="lead">Transforme sua casa com nossa aplicação de papel de parede residencial. Explore uma variedade de estilos, padrões e texturas para criar ambientes únicos e acolhedores em qualquer espaço. Renove seus interiores de forma rápida e econômica, adicionando personalidade e charme a cada cômodo. Descubra como o papel de parede pode fazer toda a diferença na sua decoração!</p><br>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Saiba mais</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!--Imagem do do lado direito e texto do lado esquerdo 03 -->
+<div class="container col-xxl-8 px-4 py-5">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/imagem1.jpg" alt="Slide 1">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/imagem2.jpeg" alt="Slide 2">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/imagem3.jpeg" alt="Slide 3">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/imagem4.jpeg" alt="Slide 4">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/imagem5.jpeg" alt="Slide 5">
+          </div>
         </div>
       </div>
     </div>
-  </div>   
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold text-body-whide lh-1 mb-3"> Aplicação de Pelicula para Janela Residêncial </h1>
+      <p class="lead">Melhore sua privacidade, segurança e conforto em casa com nossa aplicação de película para janelas residenciais. Nossa película oferece proteção contra raios UV, redução de calor e minimização de brilho, mantendo a luminosidade natural e preservando a vista externa. Com uma variedade de opções de tonalidade e design, personalize suas janelas para atender às suas necessidades estéticas e funcionais.</p><br>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Saiba mais</button>
+      </div>
+    </div>
+  </div>
+</div>   
 
 
 
 
-<!--Imagem do do lado esquerdo e texto do lado direito-->
-  <div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-6">
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="img/imagem1.jpg" alt="Slide 1">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/imagem2.jpeg" alt="Slide 2">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/imagem3.jpeg" alt="Slide 3">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/imagem4.jpeg" alt="Slide 4">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/imagem5.jpeg" alt="Slide 5">
-              </div>
+<!--Imagem do do lado esquerdo e texto do lado direito 04 -->
+<div class="container col-xxl-8 px-4 py-5">
+  <div class="row flex-lg-row align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/imagem1.jpg" alt="Slide 1">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/imagem2.jpeg" alt="Slide 2">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/imagem3.jpeg" alt="Slide 3">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/imagem4.jpeg" alt="Slide 4">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/imagem5.jpeg" alt="Slide 5">
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
-            <h1 class="display-5 fw-bold text-body-whide lh-1 mb-3">Coloque seu titulo aqui</h1>
-            <p class="lead">Entre montanhas majestosas e campos verdejantes, a paisagem se revela em toda sua grandiosidade. Os raios do sol pintam um quadro de cores vibrantes sobre os vales tranquilos. O rio serpenteia suavemente, refletindo o céu azul profundo. Árvores antigas testemunham o passar das estações, suas folhas dançando ao sabor do vento. Cada detalhe dessa paisagem inspira calma e admiração, uma obra-prima da natureza.!</p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Saiba mais</button>
-            </div>
-        </div>
-    </div>
+      </div>
+      <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-whide lh-1 mb-3"> Aplicação de Pelicula para Janela Residêncial </h1>
+          <p class="lead">Melhore sua privacidade, segurança e conforto em casa com nossa aplicação de película para janelas residenciais. Nossa película oferece proteção contra raios UV, redução de calor e minimização de brilho, mantendo a luminosidade natural e preservando a vista externa. Com uma variedade de opções de tonalidade e design, personalize suas janelas para atender às suas necessidades estéticas e funcionais.</p><br>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Saiba mais</button>
+          </div>
+      </div>
+  </div>
 </div>
 
 
-  <!-- Swiper -->
 
- 
+
+<!--Imagem do do lado direito e texto do lado esquerdo 03 -->
+<div class="container col-xxl-8 px-4 py-5">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/imagem1.jpg" alt="Slide 1">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/imagem2.jpeg" alt="Slide 2">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/imagem3.jpeg" alt="Slide 3">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/imagem4.jpeg" alt="Slide 4">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/imagem5.jpeg" alt="Slide 5">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold text-body-whide lh-1 mb-3"> Evelopamento de Eletrodomesticos </h1>
+      <p class="lead">Transforme sua casa com nossa aplicRenove a aparência de geladeiras, fogões, máquinas de lavar e mais, com uma ampla variedade de cores e texturas disponíveis. Proteja contra arranhões e danos enquanto adiciona um toque personalizado à sua cozinha ou lavanderia.</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Saiba mais</button>
+      </div>
+    </div>
+  </div>
+</div>   
+
+
+
+
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -102,8 +339,21 @@
     });
   </script>
 
+<!-- Roda Pé -->
+<div class="container">
+  <footer class="py-3 my-4 text-black">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+              <a class="nav-link px-10 text-black" style="font-size: 20px;" href="#">Voltar ao início</a>
+          </li>
+      </ul>
+      <p class="text-center ">&copy; 2024 Adesivos Brasília</p>
+  </footer>
+</div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-
 </html>
